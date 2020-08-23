@@ -1,0 +1,16 @@
+covid19:
+  http:
+    client:
+      url: https://api.covid19api.com
+server:
+  port: 8090
+  servlet:
+    context-path: /covid-data
+logging:
+  level:
+    com:
+      example:
+        covid19:
+          repository:
+            client:
+              Covid19ApiClient: DEBUG
